@@ -8,7 +8,7 @@ const openai = new OpenAI({
 
 async function chatHandler(req, res) {
   const completion = await openai.createChatCompletion({
-    model: "gpt-4",
+    model: "gpt-4-32k",
     messages: [
       {
         role: ChatCompletionRequestMessageRoleEnum.System,
