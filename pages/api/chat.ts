@@ -8,7 +8,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: '',
+  baseURL: 'https://neuroapi.host/v1'
 });
 
 const openai = new OpenAIApi(configuration);
