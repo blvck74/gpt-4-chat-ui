@@ -2,8 +2,8 @@ const { Configuration, OpenAI, ChatCompletionRequestMessageRoleEnum } = require(
 const { NextApiRequest, NextApiResponse } = require("next");
 
 const openai = new OpenAI({
-  apiKey: '',
-  baseURL: 'https://neuroapi.host/v1'
+  apiKey: 'sk-gfEzUwwBc2ybxPeg56Ac07Ac371c495eB7E52f09883e32F3',
+  baseURL: 'https://neuroapi.host/v1/chat/'
 });
 
 async function chatHandler(req, res) {
